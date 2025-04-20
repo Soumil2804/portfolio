@@ -6,11 +6,7 @@
   <title>Soumil Jain - Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <script>
-    function toggleDarkMode() {
-      document.body.classList.toggle('dark-mode');
-    }
-  </script>
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -42,7 +38,6 @@
       </div>
     </div>
   </section>
-  
 
   <section id="about">
     <div class="container">
@@ -151,17 +146,5 @@
   <footer class="site-footer">
     <p>&copy; 2025 Soumil Jain. Crafted with passion.</p>
   </footer>
-
-  <script>
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
-  </script>
 </body>
 </html>
