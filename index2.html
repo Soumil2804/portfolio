@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Soumil Jain - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css" />
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <h1 class="logo">Soumil Jain</h1>
+      <nav class="main-nav">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <button onclick="toggleDarkMode()" class="dark-toggle">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2>Hello, I'm <span class="highlight">Soumil Jain</span></h2>
+          <p>A <strong>Full Stack Developer</strong> & <strong>ML Enthusiast</strong></p>
+          <a class="cta-button" href="#projects">View My Work</a>
+        </div>
+        <div class="hero-image">
+          <img src="images/profile.jpg" alt="Soumil Jain" />
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I’m a Computer Science student passionate about software development and machine learning. I enjoy turning complex problems into simple, beautiful, and intuitive solutions.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Relief Fund Prediction</h3>
+          <p>ML model to predict fund allocation based on disaster metrics using RandomForest.</p>
+        </div>
+        <div class="card">
+          <h3>House Price Prediction</h3>
+          <p>Regression model estimating property prices based on features like location and size.</p>
+        </div>
+        <div class="card">
+          <h3>Music Streaming Web App</h3>
+          <p>A Java and MySQL based platform to stream and manage music collections.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <p>Worked on real-time machine learning projects during internships at Bharat Intern and CodSoft.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>Machine Learning</li>
+        <li>MySQL</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="timeline">
+    <div class="container">
+      <h2>My Journey</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="date">2023</span>
+          <p>Started research internship at UPES and explored data analytics.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="date">2024</span>
+          <p>Completed ML internships and launched multiple web-based projects.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="date">2025</span>
+          <p>Building a diverse developer portfolio while contributing to open-source.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div class="testimonial-card">
+        <p>"Soumil's attention to detail and innovative thinking brought our project to life!"</p>
+        <span>- Project Mentor</span>
+      </div>
+      <div class="testimonial-card">
+        <p>"A talented developer with a strong grasp on both frontend and ML concepts."</p>
+        <span>- Internship Supervisor</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="container">
+      <h2>Project Gallery</h2>
+      <div class="gallery-grid">
+        <img src="https://via.placeholder.com/300x200" alt="Project 1" class="scroll-reveal">
+        <img src="https://via.placeholder.com/300x200" alt="Project 2" class="scroll-reveal">
+        <img src="https://via.placeholder.com/300x200" alt="Project 3" class="scroll-reveal">
+        <img src="https://via.placeholder.com/300x200" alt="Project 4" class="scroll-reveal">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:sj28soumil@gmail.com">sj28soumil@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/soumiljain" target="_blank">github.com/soumiljain</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/soumiljain" target="_blank">linkedin.com/in/soumiljain</a></p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Soumil Jain. Crafted with passion.</p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

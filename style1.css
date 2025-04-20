@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    scroll-behavior: smooth;
+  }
+  
+  a {
+    color: #60a5fa;
+    text-decoration: none;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  .site-header {
+    background-color: #1e293b;
+    padding: 20px 0;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  
+  .main-nav a {
+    margin-left: 20px;
+    color: #f1f5f9;
+    font-weight: 500;
+  }
+  
+  .main-nav a:hover {
+    color: #38bdf8;
+  }
+  
+  .dark-toggle {
+    background: #1e293b;
+    color: #f8fafc;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .dark-toggle:hover {
+    background: #334155;
+  }
+  
+  #hero {
+    background: linear-gradient(to right, #1e3a8a, #2563eb);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  #hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #38bdf8;
+    color: #0f172a;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+  
+  .cta-button:hover {
+    background-color: #0ea5e9;
+  }
+  
+  section {
+    padding: 70px 0;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    color: #fbbf24;
+  }
+  
+  .card-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    flex: 1 1 calc(33.33% - 20px);
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  
+  .card h3 {
+    color: #facc15;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .skills-list li {
+    background-color: #2563eb;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+  
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .timeline-item {
+    background: #1e293b;
+    padding: 20px;
+    border-left: 4px solid #38bdf8;
+    margin-left: 10px;
+  }
+  
+  .timeline-item .date {
+    font-weight: bold;
+    color: #facc15;
+  }
+  
+  .testimonial-card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  
+  .testimonial-card span {
+    display: block;
+    margin-top: 10px;
+    color: #94a3b8;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Dark Mode */
+  .dark-mode {
+    background-color: #0f172a;
+    color: #e5e7eb;
+  }
+  .dark-mode a {
+    color: #93c5fd;
+  }
+  .dark-mode .card,
+  .dark-mode .testimonial-card,
+  .dark-mode .timeline-item,
+  .dark-mode .gallery-grid img {
+    background-color: #1e293b;
+  }
+
+  .hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .hero-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: left;
+  }
+  
+  .hero-text {
+    flex: 1 1 300px;
+  }
+  
+  .hero-image {
+    flex: 1 1 250px;
+    max-width: 250px;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    border-radius: 50%;
+    border: 4px solid #facc15;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  
+  /* Responsive hero */
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .hero-image {
+      max-width: 200px;
+    }
+  }
+  
+  
